@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/CCANALocalWirelessApp_deploy" />
+  <setParameter name="ApplicationServices-Web.config Connection String" value="Data Source=38.101.234.50;Initial Catalog=sprint;User ID=321app;Password=app32!" />
+</parameters>

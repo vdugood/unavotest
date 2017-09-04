@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <soap:Header>
+    <wsMessageHeader xmlns="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+      <trackingMessageHeader>
+        <applicationId>2010102801</applicationId>
+        <applicationUserId>tstool01</applicationUserId>
+        <messageId>32813</messageId>
+        <timeToLive>60</timeToLive>
+        <messageDateTimeStamp>0001-01-01T00:00:00</messageDateTimeStamp>
+      </trackingMessageHeader>
+    </wsMessageHeader>
+    <wsa:Action wsu:Id="Id-2a19d214-83f6-48d3-90ee-958b3a79a352">splitNpaMdn</wsa:Action>
+    <wsa:MessageID wsu:Id="Id-f414695a-bc81-4f3c-86f4-d606a5d306ee">urn:uuid:09b0c10e-047d-401b-8dcf-72afef6e6d97</wsa:MessageID>
+    <wsa:ReplyTo wsu:Id="Id-b0149f32-53b8-4451-a5b7-f0d14ef66f38">
+      <wsa:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:Address>
+    </wsa:ReplyTo>
+    <wsa:To wsu:Id="Id-d8ce37e8-ab7e-409a-a991-8c46ea58c096">https://webservicesgatewaytest.sprint.com:444/services/mvno/rtb2/WholesaleSwapSplitService/v1</wsa:To>
+    <wsse:Security soap:mustUnderstand="1">
+      <wsu:Timestamp wsu:Id="Timestamp-4f946e3c-c306-413d-9cc9-20cd36a1fa64">
+        <wsu:Created>2011-03-03T16:47:27Z</wsu:Created>
+        <wsu:Expires>2011-03-03T17:00:47Z</wsu:Expires>
+      </wsu:Timestamp>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#Id-2a19d214-83f6-48d3-90ee-958b3a79a352">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>AW1s0yA0EMw4ibaoiqc71CiN+Y0=</DigestValue>
+          </Reference>
+          <Reference URI="#Id-f414695a-bc81-4f3c-86f4-d606a5d306ee">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>Z4uVS/byDv9xc6cnQGyLaP723CM=</DigestValue>
+          </Reference>
+          <Reference URI="#Id-b0149f32-53b8-4451-a5b7-f0d14ef66f38">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>RSYPb34Ccz0Ri8//Is2wF6qhlmc=</DigestValue>
+          </Reference>
+          <Reference URI="#Id-d8ce37e8-ab7e-409a-a991-8c46ea58c096">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>4kWDxp6Yk+O70xClaByy7DA10NY=</DigestValue>
+          </Reference>
+          <Reference URI="#Timestamp-4f946e3c-c306-413d-9cc9-20cd36a1fa64">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>ARaL/jvlAxE5+OwKkiMmHHBJLzk=</DigestValue>
+          </Reference>
+          <Reference URI="#Id-4310eec5-0dc4-4ee3-a9e9-174c4955a072">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>uJ0Iqsj0FeGvEakRaviA3Z6q3CU=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>VpyVSnnRh6I60elgx9HATNqTcM0MzBAROi4EmbUeAPiSCnI7cjQ08AWBW25XyGFSr2vmDR3DHGynw4Np1Xiki4r6DmR7Xr/4LKzKGWSli2B5M2m1botZFsIP/lprySvUH/9I/l1CXomd9w5Gk9PFJZMUaCfSwEVRy/nnVMcfjsk=</SignatureValue>
+        <KeyInfo>
+          <wsse:SecurityTokenReference>
+            <wsse:KeyIdentifier ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509SubjectKeyIdentifier" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">3fO5AaIRvKnKh8Qs443HZQOWxf0=</wsse:KeyIdentifier>
+          </wsse:SecurityTokenReference>
+        </KeyInfo>
+      </Signature>
+    </wsse:Security>
+  </soap:Header>
+  <soap:Body wsu:Id="Id-4310eec5-0dc4-4ee3-a9e9-174c4955a072">
+    <splitNpaMdn xmlns="http://integration.sprint.com/interfaces/WholesaleSwapSplit/v1/SwapSplitEnvelope.xsd">
+      <oldMdn>2052490173</oldMdn>
+    </splitNpaMdn>
+  </soap:Body>
+</soap:Envelope>

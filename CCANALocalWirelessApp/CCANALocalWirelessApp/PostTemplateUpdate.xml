@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BeQuick product="OSS">
+	<session>
+		<clec>
+			<id>224</id>
+			<user>
+				<firstName>Unavo</firstName>
+				<lastName>inc</lastName>
+			</user>
+		</clec>
+	</session>
+	<request type="CustomerUpdate">
+		<customer>
+			<customerId>1001</customerId>
+			<agentId>2</agentId>
+			<generalInformation>
+				<advertisingCode>uNAvo Marketing</advertisingCode>
+			</generalInformation>
+		</customer>
+	</request>
+</BeQuick>

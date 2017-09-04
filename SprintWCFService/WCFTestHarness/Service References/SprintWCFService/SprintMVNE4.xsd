@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DomainObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DomainObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="EsnType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Hex" />
+      <xs:enumeration value="Dec" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EsnType" nillable="true" type="tns:EsnType" />
+  <xs:complexType name="ESNInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivationtypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="CSA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ESN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LocalCallOnly" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MDN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MSID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SMSBlock" type="xs:boolean" />
+      <xs:element minOccurs="0" name="VoiceMail" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ESNInfo" nillable="true" type="tns:ESNInfo" />
+  <xs:complexType name="ArrayOfESNInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ESNInfo" nillable="true" type="tns:ESNInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfESNInfo" nillable="true" type="tns:ArrayOfESNInfo" />
+  <xs:complexType name="ArrayOfESNStatusDoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ESNStatusDoc" nillable="true" type="tns:ESNStatusDoc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfESNStatusDoc" nillable="true" type="tns:ArrayOfESNStatusDoc" />
+  <xs:complexType name="ESNStatusDoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ESN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ESNStatus" type="tns:ESNSTATUSENUM" />
+      <xs:element minOccurs="0" name="MDN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MSID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ESNStatusDoc" nillable="true" type="tns:ESNStatusDoc" />
+  <xs:simpleType name="ESNSTATUSENUM">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="SUCCEEDED" />
+      <xs:enumeration value="FAILED" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ESNSTATUSENUM" nillable="true" type="tns:ESNSTATUSENUM" />
+</xs:schema>

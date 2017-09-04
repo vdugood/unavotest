@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SprintWseLibrary.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PingTestClient_com_sprint_webservicesgatewaytest_QueryCsaService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservicesgateway.sprint.com:444/services/mvno/QueryCsaService/v1</Value>
+    </Setting>
+    <Setting Name="userCertificateName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CN=321com, OU=TPA, OU=BMP, OU=Projects, O=Sprint, C=us</Value>
+    </Setting>
+    <Setting Name="PingTestClient_com_sprint_webservicesgatewaytest1_WholesaleSubscriptionDetailService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservicesgateway.sprint.com:444/services/mvno/WholesaleSubscriptionDetailService/v1</Value>
+    </Setting>
+    <Setting Name="PingTestClient_com_sprint_WholesaleSubscriptionModifyService_WholesaleSubscriptionModifyService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservicesgateway.sprint.com:444/services/mvno/WholesaleSubscriptionModifyService/v1</Value>
+    </Setting>
+    <Setting Name="PingTestClient_com_sprint_WholesaleSubscriptionService_WholesaleSubscriptionService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://webservicesgateway.sprint.com:444/services/mvno/WholesaleSubscriptionService/v1</Value>
+    </Setting>
+    <Setting Name="PingTestClient_com_sprint_WholesaleSwapSplit_WholesaleSwapSplit" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://webservicesgateway.sprint.com:444/services/mvno/WholesaleSwapSplitService/v1</Value>
+    </Setting>
+    <Setting Name="PingTestClient_com_sprint_WholesaleUsageInquiryService_WholesaleUsageInquiryService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://webservicesgateway.sprint.com:444/services/mvno/WholesaleUsageInquiryService/v1</Value>
+    </Setting>
+    <Setting Name="PingTestClient_com_sprint_WholesaleWnpService_WholesaleWnpService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://webservicesgateway.sprint.com:444/services/mvno/WholesaleWnpService/v1</Value>
+    </Setting>
+    <Setting Name="PingTestClient_com_sprint_WholesalePortMessageService_WholesalePortMessageService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://webservicesgateway.sprint.com:444/services/mvno/WholesalePortMessageService/v1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

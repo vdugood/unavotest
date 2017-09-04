@@ -1,0 +1,11 @@
+C:\SprintWebsite\SprintWseLibrary\bin\Release\SprintWseLibrary.dll.config
+C:\SprintWebsite\SprintWseLibrary\bin\Release\SprintWseLibrary.dll
+C:\SprintWebsite\SprintWseLibrary\bin\Release\SprintWseLibrary.pdb
+C:\SprintWebsite\SprintWseLibrary\bin\Release\DomainObjects.dll
+C:\SprintWebsite\SprintWseLibrary\bin\Release\DomainObjects.pdb
+C:\SprintWebsite\SprintWseLibrary\obj\Release\ResolveAssemblyReference.cache
+C:\SprintWebsite\SprintWseLibrary\obj\Release\SprintWseLibrary.Properties.Resources.resources
+C:\SprintWebsite\SprintWseLibrary\obj\Release\GenerateResource.read.1.tlog
+C:\SprintWebsite\SprintWseLibrary\obj\Release\GenerateResource.write.1.tlog
+C:\SprintWebsite\SprintWseLibrary\obj\Release\SprintWseLibrary.dll
+C:\SprintWebsite\SprintWseLibrary\obj\Release\SprintWseLibrary.pdb

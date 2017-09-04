@@ -1,0 +1,9 @@
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\bin\SprintWCFService.dll
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\bin\SprintWCFService.pdb
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\bin\DomainObjects.dll
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\bin\SprintWseLibrary.dll
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\bin\DomainObjects.pdb
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\bin\SprintWseLibrary.pdb
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\obj\Debug\SprintWCFService.dll
+C:\TFS\Unavo\SprintWCFService\SprintWCFService\obj\Debug\SprintWCFService.pdb

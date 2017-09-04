@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BeQuick product="OSS">
+  <session>
+    <clec>
+      <id>224</id>
+      <user>
+        <firstName>Unavo</firstName>
+        <lastName>inc</lastName>
+      </user>
+    </clec>
+  </session>
+  <request type="CustomerProfile">
+    <customerId>1016</customerId>
+    <contactPhone></contactPhone>
+    <telephoneNumber></telephoneNumber>
+  </request>
+</BeQuick>

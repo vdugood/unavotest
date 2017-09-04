@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:i0="http://schemas.microsoft.com/ws/2005/02/mex/bindings" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SprintMVNE" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://schemas.microsoft.com/ws/2005/02/mex/bindings" location="http://wirelessintegration.fasimo.com/SprintMVNE.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/DomainObjects" />
+      <xsd:import schemaLocation="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd5" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISprintMVNE_GetPpSocList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPpSocList" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetPpSocList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPpSocListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetPpSocList_V2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPpSocList_V2" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetPpSocList_V2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPpSocList_V2Response" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetCSAList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCSAList" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetCSAList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCSAListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetValidNpaList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValidNpaList" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetValidNpaList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValidNpaListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_QuerySubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:QuerySubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_QuerySubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QuerySubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_QuerySubscriptionByMDN_InputMessage">
+    <wsdl:part name="parameters" element="tns:QuerySubscriptionByMDN" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_QuerySubscriptionByMDN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QuerySubscriptionByMDNResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_QuerySubscriptionByESN_InputMessage">
+    <wsdl:part name="parameters" element="tns:QuerySubscriptionByESN" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_QuerySubscriptionByESN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QuerySubscriptionByESNResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_QuerySubscriptionByESN_V2_InputMessage">
+    <wsdl:part name="parameters" element="tns:QuerySubscriptionByESN_V2" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_QuerySubscriptionByESN_V2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QuerySubscriptionByESN_V2Response" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetPricePlans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPricePlans" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_GetPricePlans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPricePlansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ExpireSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExpireSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ExpireSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExpireSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SuspendSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuspendSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SuspendSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuspendSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_HotlineSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:HotlineSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_HotlineSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HotlineSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_RestoreSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:RestoreSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_RestoreSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RestoreSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_RemoveSMSBlockRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSMSBlockRequest" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_RemoveSMSBlockRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSMSBlockRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_IssueSMSBlockRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:IssueSMSBlockRequest" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_IssueSMSBlockRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IssueSMSBlockRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ChangeServicePlans_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeServicePlans" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ChangeServicePlans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeServicePlansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_WholesaleChangeServicePlansV2_InputMessage">
+    <wsdl:part name="parameters" element="tns:WholesaleChangeServicePlansV2" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_WholesaleChangeServicePlansV2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WholesaleChangeServicePlansV2Response" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SwapEsn_InputMessage">
+    <wsdl:part name="parameters" element="tns:SwapEsn" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SwapEsn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SwapEsnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SwapMdn_InputMessage">
+    <wsdl:part name="parameters" element="tns:SwapMdn" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SwapMdn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SwapMdnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SplitNpaMdn_InputMessage">
+    <wsdl:part name="parameters" element="tns:SplitNpaMdn" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SplitNpaMdn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SplitNpaMdnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SwapMdnWithReserveId_InputMessage">
+    <wsdl:part name="parameters" element="tns:SwapMdnWithReserveId" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_SwapMdnWithReserveId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SwapMdnWithReserveIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_WholesaleUsageInqueryByMdn_InputMessage">
+    <wsdl:part name="parameters" element="tns:WholesaleUsageInqueryByMdn" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_WholesaleUsageInqueryByMdn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WholesaleUsageInqueryByMdnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ActivateSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ActivateSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ActivateSubscriptionV2_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateSubscriptionV2" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ActivateSubscriptionV2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateSubscriptionV2Response" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ActivateSubscriptionNpa_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateSubscriptionNpa" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ActivateSubscriptionNpa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateSubscriptionNpaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ReserveSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReserveSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ReserveSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReserveSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ReserveSubscriptionNpa_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReserveSubscriptionNpa" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ReserveSubscriptionNpa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReserveSubscriptionNpaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ReserveSubscriptionGeoCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReserveSubscriptionGeoCode" />
+  </wsdl:message>
+  <wsdl:message name="ISprintMVNE_ReserveSubscriptionGeoCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReserveSubscriptionGeoCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISprintMVNE">
+    <wsdl:operation name="GetPpSocList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/GetPpSocList" message="tns:ISprintMVNE_GetPpSocList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/GetPpSocListResponse" message="tns:ISprintMVNE_GetPpSocList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPpSocList_V2">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/GetPpSocList_V2" message="tns:ISprintMVNE_GetPpSocList_V2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/GetPpSocList_V2Response" message="tns:ISprintMVNE_GetPpSocList_V2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCSAList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/GetCSAList" message="tns:ISprintMVNE_GetCSAList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/GetCSAListResponse" message="tns:ISprintMVNE_GetCSAList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidNpaList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/GetValidNpaList" message="tns:ISprintMVNE_GetValidNpaList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/GetValidNpaListResponse" message="tns:ISprintMVNE_GetValidNpaList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/QuerySubscription" message="tns:ISprintMVNE_QuerySubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/QuerySubscriptionResponse" message="tns:ISprintMVNE_QuerySubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscriptionByMDN">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/QuerySubscriptionByMDN" message="tns:ISprintMVNE_QuerySubscriptionByMDN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/QuerySubscriptionByMDNResponse" message="tns:ISprintMVNE_QuerySubscriptionByMDN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscriptionByESN">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/QuerySubscriptionByESN" message="tns:ISprintMVNE_QuerySubscriptionByESN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/QuerySubscriptionByESNResponse" message="tns:ISprintMVNE_QuerySubscriptionByESN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscriptionByESN_V2">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/QuerySubscriptionByESN_V2" message="tns:ISprintMVNE_QuerySubscriptionByESN_V2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/QuerySubscriptionByESN_V2Response" message="tns:ISprintMVNE_QuerySubscriptionByESN_V2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPricePlans">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/GetPricePlans" message="tns:ISprintMVNE_GetPricePlans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/GetPricePlansResponse" message="tns:ISprintMVNE_GetPricePlans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExpireSubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/ExpireSubscription" message="tns:ISprintMVNE_ExpireSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/ExpireSubscriptionResponse" message="tns:ISprintMVNE_ExpireSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuspendSubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/SuspendSubscription" message="tns:ISprintMVNE_SuspendSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/SuspendSubscriptionResponse" message="tns:ISprintMVNE_SuspendSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HotlineSubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/HotlineSubscription" message="tns:ISprintMVNE_HotlineSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/HotlineSubscriptionResponse" message="tns:ISprintMVNE_HotlineSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RestoreSubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/RestoreSubscription" message="tns:ISprintMVNE_RestoreSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/RestoreSubscriptionResponse" message="tns:ISprintMVNE_RestoreSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSMSBlockRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/RemoveSMSBlockRequest" message="tns:ISprintMVNE_RemoveSMSBlockRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/RemoveSMSBlockRequestResponse" message="tns:ISprintMVNE_RemoveSMSBlockRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IssueSMSBlockRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/IssueSMSBlockRequest" message="tns:ISprintMVNE_IssueSMSBlockRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/IssueSMSBlockRequestResponse" message="tns:ISprintMVNE_IssueSMSBlockRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeServicePlans">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/ChangeServicePlans" message="tns:ISprintMVNE_ChangeServicePlans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/ChangeServicePlansResponse" message="tns:ISprintMVNE_ChangeServicePlans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WholesaleChangeServicePlansV2">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/WholesaleChangeServicePlansV2" message="tns:ISprintMVNE_WholesaleChangeServicePlansV2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/WholesaleChangeServicePlansV2Response" message="tns:ISprintMVNE_WholesaleChangeServicePlansV2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SwapEsn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/SwapEsn" message="tns:ISprintMVNE_SwapEsn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/SwapEsnResponse" message="tns:ISprintMVNE_SwapEsn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SwapMdn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/SwapMdn" message="tns:ISprintMVNE_SwapMdn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/SwapMdnResponse" message="tns:ISprintMVNE_SwapMdn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SplitNpaMdn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/SplitNpaMdn" message="tns:ISprintMVNE_SplitNpaMdn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/SplitNpaMdnResponse" message="tns:ISprintMVNE_SplitNpaMdn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SwapMdnWithReserveId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/SwapMdnWithReserveId" message="tns:ISprintMVNE_SwapMdnWithReserveId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/SwapMdnWithReserveIdResponse" message="tns:ISprintMVNE_SwapMdnWithReserveId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WholesaleUsageInqueryByMdn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/WholesaleUsageInqueryByMdn" message="tns:ISprintMVNE_WholesaleUsageInqueryByMdn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/WholesaleUsageInqueryByMdnResponse" message="tns:ISprintMVNE_WholesaleUsageInqueryByMdn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateSubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/ActivateSubscription" message="tns:ISprintMVNE_ActivateSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/ActivateSubscriptionResponse" message="tns:ISprintMVNE_ActivateSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateSubscriptionV2">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/ActivateSubscriptionV2" message="tns:ISprintMVNE_ActivateSubscriptionV2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/ActivateSubscriptionV2Response" message="tns:ISprintMVNE_ActivateSubscriptionV2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateSubscriptionNpa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/ActivateSubscriptionNpa" message="tns:ISprintMVNE_ActivateSubscriptionNpa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/ActivateSubscriptionNpaResponse" message="tns:ISprintMVNE_ActivateSubscriptionNpa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReserveSubscription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/ReserveSubscription" message="tns:ISprintMVNE_ReserveSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/ReserveSubscriptionResponse" message="tns:ISprintMVNE_ReserveSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReserveSubscriptionNpa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/ReserveSubscriptionNpa" message="tns:ISprintMVNE_ReserveSubscriptionNpa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/ReserveSubscriptionNpaResponse" message="tns:ISprintMVNE_ReserveSubscriptionNpa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReserveSubscriptionGeoCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISprintMVNE/ReserveSubscriptionGeoCode" message="tns:ISprintMVNE_ReserveSubscriptionGeoCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISprintMVNE/ReserveSubscriptionGeoCodeResponse" message="tns:ISprintMVNE_ReserveSubscriptionGeoCode_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISprintMVNE" type="tns:ISprintMVNE">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPpSocList">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/GetPpSocList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPpSocList_V2">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/GetPpSocList_V2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCSAList">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/GetCSAList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidNpaList">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/GetValidNpaList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscription">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/QuerySubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscriptionByMDN">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/QuerySubscriptionByMDN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscriptionByESN">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/QuerySubscriptionByESN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubscriptionByESN_V2">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/QuerySubscriptionByESN_V2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPricePlans">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/GetPricePlans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExpireSubscription">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/ExpireSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuspendSubscription">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/SuspendSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HotlineSubscription">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/HotlineSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestoreSubscription">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/RestoreSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSMSBlockRequest">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/RemoveSMSBlockRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IssueSMSBlockRequest">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/IssueSMSBlockRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeServicePlans">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/ChangeServicePlans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WholesaleChangeServicePlansV2">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/WholesaleChangeServicePlansV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SwapEsn">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/SwapEsn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SwapMdn">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/SwapMdn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SplitNpaMdn">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/SplitNpaMdn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SwapMdnWithReserveId">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/SwapMdnWithReserveId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WholesaleUsageInqueryByMdn">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/WholesaleUsageInqueryByMdn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateSubscription">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/ActivateSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateSubscriptionV2">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/ActivateSubscriptionV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateSubscriptionNpa">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/ActivateSubscriptionNpa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserveSubscription">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/ReserveSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserveSubscriptionNpa">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/ReserveSubscriptionNpa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserveSubscriptionGeoCode">
+      <soap:operation soapAction="http://tempuri.org/ISprintMVNE/ReserveSubscriptionGeoCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SprintMVNE">
+    <wsdl:port name="BasicHttpBinding_ISprintMVNE" binding="tns:BasicHttpBinding_ISprintMVNE">
+      <soap:address location="http://wirelessintegration.fasimo.com/SprintMVNE.svc" />
+    </wsdl:port>
+    <wsdl:port name="MetadataExchangeHttpBinding_ISprintMVNE" binding="i0:MetadataExchangeHttpBinding_ISprintMVNE">
+      <soap12:address location="http://wirelessintegration.fasimo.com/SprintMVNE.svc/mex" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://wirelessintegration.fasimo.com/SprintMVNE.svc/mex</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

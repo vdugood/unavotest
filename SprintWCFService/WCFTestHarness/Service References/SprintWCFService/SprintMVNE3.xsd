@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/DomainObjects" />
+  <xs:element name="GetPpSocList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CSA" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPpSocListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPpSocListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPpSocList_V2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CSA" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPpSocList_V2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPpSocList_V2Result" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCSAList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCSAListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCSAListResult" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidNpaList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CSA" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidNpaListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetValidNpaListResult" nillable="true" type="q2:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Esn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mdn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DomainObjects" minOccurs="0" name="etype" type="q3:EsnType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QuerySubscriptionResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySubscriptionByMDN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Mdn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySubscriptionByMDNResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QuerySubscriptionByMDNResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySubscriptionByESN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ESN" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySubscriptionByESNResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QuerySubscriptionByESNResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySubscriptionByESN_V2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ESN" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySubscriptionByESN_V2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QuerySubscriptionByESN_V2Result" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPricePlans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CSA" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPricePlansResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPricePlansResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExpireSubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mdn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ExpireDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="expireDateSpecified" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExpireSubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExpireSubscriptionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuspendSubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mdn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="activity" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuspendSubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SuspendSubscriptionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HotlineSubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mdn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HotlineSubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HotlineSubscriptionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RestoreSubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mdn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RestoreSubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RestoreSubscriptionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveSMSBlockRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DomainObjects" minOccurs="0" name="info" nillable="true" type="q4:ESNInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveSMSBlockRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RemoveSMSBlockRequestResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IssueSMSBlockRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DomainObjects" minOccurs="0" name="info" nillable="true" type="q5:ESNInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IssueSMSBlockRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IssueSMSBlockRequestResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeServicePlans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DomainObjects" minOccurs="0" name="info" nillable="true" type="q6:ESNInfo" />
+        <xs:element minOccurs="0" name="OldLocalCallOnly" type="xs:boolean" />
+        <xs:element minOccurs="0" name="OldVoiceMail" type="xs:boolean" />
+        <xs:element minOccurs="0" name="OldSMSBlock" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeServicePlansResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChangeServicePlansResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WholesaleChangeServicePlansV2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mdn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newPricePlan" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WholesaleChangeServicePlansV2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WholesaleChangeServicePlansV2Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SwapEsn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mdn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newEsn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SwapEsnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SwapEsnResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SwapMdn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mdn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SwapMdnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SwapMdnResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="msid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SplitNpaMdn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="oldMdn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SplitNpaMdnResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SwapMdnWithReserveId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="oldMdn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="reserveMdnId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SwapMdnWithReserveIdResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WholesaleUsageInqueryByMdn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mdn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WholesaleUsageInqueryByMdnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WholesaleUsageInqueryByMdnResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateSubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DomainObjects" minOccurs="0" name="ESNInfos" nillable="true" type="q7:ArrayOfESNInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateSubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DomainObjects" minOccurs="0" name="ActivateSubscriptionResult" nillable="true" type="q8:ArrayOfESNStatusDoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateSubscriptionV2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DomainObjects" minOccurs="0" name="ESNInfos" nillable="true" type="q9:ArrayOfESNInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateSubscriptionV2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DomainObjects" minOccurs="0" name="ActivateSubscriptionV2Result" nillable="true" type="q10:ArrayOfESNStatusDoc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateSubscriptionNpa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Esn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="npa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateSubscriptionNpaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReserveSubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReserveSubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReserveSubscriptionNpa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="npa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReserveSubscriptionNpaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReserveSubscriptionGeoCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReserveSubscriptionGeoCodeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

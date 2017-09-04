@@ -1,0 +1,6 @@
+C:\TFS\Unavo\SprintWCFService\WCFTestHarness\bin\Debug\WCFTestHarness.exe
+C:\TFS\Unavo\SprintWCFService\WCFTestHarness\bin\Debug\WCFTestHarness.pdb
+C:\TFS\Unavo\SprintWCFService\WCFTestHarness\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\TFS\Unavo\SprintWCFService\WCFTestHarness\obj\x86\Debug\WCFTestHarness.exe
+C:\TFS\Unavo\SprintWCFService\WCFTestHarness\obj\x86\Debug\WCFTestHarness.pdb
+C:\TFS\Unavo\SprintWCFService\WCFTestHarness\bin\Debug\WCFTestHarness.exe.config

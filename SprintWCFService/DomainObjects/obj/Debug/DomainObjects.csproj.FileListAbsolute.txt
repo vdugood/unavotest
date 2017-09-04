@@ -1,0 +1,10 @@
+C:\SprintWebsite\DomainObjects\bin\Debug\DomainObjects.dll
+C:\SprintWebsite\DomainObjects\bin\Debug\DomainObjects.pdb
+C:\SprintWebsite\DomainObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\SprintWebsite\DomainObjects\obj\Debug\DomainObjects.dll
+C:\SprintWebsite\DomainObjects\obj\Debug\DomainObjects.pdb
+C:\TFS\Unavo\SprintWCFService\DomainObjects\bin\Debug\DomainObjects.dll
+C:\TFS\Unavo\SprintWCFService\DomainObjects\bin\Debug\DomainObjects.pdb
+C:\TFS\Unavo\SprintWCFService\DomainObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS\Unavo\SprintWCFService\DomainObjects\obj\Debug\DomainObjects.dll
+C:\TFS\Unavo\SprintWCFService\DomainObjects\obj\Debug\DomainObjects.pdb

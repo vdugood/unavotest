@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="903ba41a-4515-4491-bda8-c6df1fe65b8c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://wirelessintegration.fasimo.com/SprintMVNE.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SprintMVNE.xsd" MetadataType="Schema" ID="504145e5-09bf-4e15-85a0-5600ae7fd461" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd2" />
+    <MetadataFile FileName="SprintMVNE.wsdl" MetadataType="Wsdl" ID="883a344f-1a8e-4224-8651-9c7ad1462ef6" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SprintMVNE1.xsd" MetadataType="Schema" ID="acd61943-825b-422a-a9a8-78b471626027" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd1" />
+    <MetadataFile FileName="SprintMVNE2.xsd" MetadataType="Schema" ID="34add4c6-970a-4bc6-bfb2-a9fc95709da5" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd3" />
+    <MetadataFile FileName="SprintMVNE3.xsd" MetadataType="Schema" ID="0b7d3b4d-e522-4f92-8ec4-a17614b71ea9" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd0" />
+    <MetadataFile FileName="SprintMVNE4.xsd" MetadataType="Schema" ID="9c4c65f7-3320-4d1f-b424-15bc77674cf2" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd4" />
+    <MetadataFile FileName="SprintMVNE1.wsdl" MetadataType="Wsdl" ID="e986f8e7-09ce-481c-baf0-e7fbeed81d4e" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?wsdl" />
+    <MetadataFile FileName="SprintMVNE5.xsd" MetadataType="Schema" ID="c0058590-1ed3-432f-bfd9-c0fbfeb20af2" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?xsd=xsd5" />
+    <MetadataFile FileName="SprintMVNE.disco" MetadataType="Disco" ID="fb93971b-fa47-447f-8370-0d97376ee2f3" SourceId="1" SourceUrl="http://wirelessintegration.fasimo.com/SprintMVNE.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

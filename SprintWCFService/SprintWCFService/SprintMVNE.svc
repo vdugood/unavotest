@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SprintWCFService.SprintMVNE" CodeBehind="SprintMVNE.svc.cs" %>

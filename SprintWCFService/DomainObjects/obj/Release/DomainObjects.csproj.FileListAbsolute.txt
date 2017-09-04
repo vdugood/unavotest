@@ -1,0 +1,5 @@
+C:\SprintWebsite\DomainObjects\bin\Release\DomainObjects.dll
+C:\SprintWebsite\DomainObjects\bin\Release\DomainObjects.pdb
+C:\SprintWebsite\DomainObjects\obj\Release\ResolveAssemblyReference.cache
+C:\SprintWebsite\DomainObjects\obj\Release\DomainObjects.dll
+C:\SprintWebsite\DomainObjects\obj\Release\DomainObjects.pdb
